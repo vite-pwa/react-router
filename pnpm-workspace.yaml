@@ -1,0 +1,106 @@
+autoInstallPeers: true
+
+catalogMode: prefer
+
+dedupePeers: true
+
+ignoreWorkspaceRootCheck: true
+
+linkWorkspacePackages: true
+
+verifyDepsBeforeRun: install
+
+preferWorkspacePackages: true
+
+shamefullyHoist: true
+
+shellEmulator: true
+
+strictPeerDependencies: false
+
+trustPolicy: no-downgrade
+
+packages:
+  - examples/**
+
+overrides:
+  '@types/node': 'catalog:types'
+  chokidar: ^5.0.0
+  sharp: ^0.35.5
+  semver: ^7.8.5
+  why-is-node-running: 'catalog:utils'
+
+allowBuilds:
+  '@parcel/watcher': false
+  core-js: false
+  esbuild: false
+  sharp: true
+
+catalogs:
+  build:
+    tsdown: ^0.23.1
+  eslint:
+    '@antfu/eslint-config': ^9.5.1
+    eslint: ^10.13.0
+    eslint-plugin-antfu: ^3.2.3
+  pwa:
+    '@unplugin-pwa/core': ^0.0.2
+    '@unplugin-pwa/inspector': ^0.0.2
+    '@unplugin-pwa/vite': ^0.0.2
+    '@vite-pwa/assets-generator': ^2.0.0
+    '@vite-pwa/workbox-build': ^8.0.13
+    '@vite-pwa/workbox-swkit': ^8.0.13
+    '@vite-pwa/workbox-window': ^8.0.13
+  react:
+    '@types/react': ^19.2.14
+    react: ^19.2.4
+  rr8:
+    '@react-router/dev': ^8.5.0
+    '@react-router/node': ^8.5.0
+    '@react-router/serve': ^8.5.0
+    '@tailwindcss/vite': ^4.2.2
+    '@types/react': ^19.2.14
+    '@types/react-dom': ^19.2.3
+    isbot: ^5.1.40
+    react: ^19.2.7
+    react-dom: ^19.2.7
+    react-router: ^8.5.0
+    tailwindcss: ^4.2.2
+  types:
+    '@types/debug': ^4.1.13
+    '@types/node': 24.19.2
+  typescript:
+    typescript: ~6.0.3
+  utils:
+    '@antfu/ni': ^25.0.0
+    '@arethetypeswrong/core': ^0.18.5
+    '@vitejs/devtools': ^0.7.6
+    '@vitejs/devtools-kit': ^0.7.6
+    https-localhost: 4.7.2
+    magicast: ^0.5.5
+    publint: ^0.3.25
+    rolldown: ^1.2.14
+    taze: 21.1.0
+    vite: ^8.3.5
+    vite-plugin-inspect: ^12.1.0
+    why-is-node-running: 3.2.1
+
+minimumReleaseAgeExclude:
+  - react-router
+  - vite
+  - '@react-router/dev'
+  - '@unplugin-pwa/core'
+  - '@unplugin-pwa/inspector'
+  - '@unplugin-pwa/vite'
+  - '@vite-pwa/workbox-build'
+  - '@vite-pwa/workbox-swkit'
+  - '@vite-pwa/workbox-window'
+
+supportedArchitectures:
+  os:
+    - win32
+    - darwin
+    - current
+  cpu:
+    - x64
+    - arm64

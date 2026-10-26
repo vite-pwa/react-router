@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+dist
+dev-dist
+# intellij stuff
+.idea/
+
+# Project exclude paths
+/examples/rr8/build/
