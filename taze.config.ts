@@ -7,6 +7,7 @@ export default defineConfig({
   maturityPeriod: 7,
   peer: false,
   mode: 'minor',
+  retry: 2,
   exclude: [
     'taze',
     'node',
