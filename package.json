@@ -24,15 +24,15 @@
   "sideEffects": false,
   "exports": {
     ".": "./dist/index.mjs",
-    "./components": "./dist/components.mjs",
-    "./config": "./dist/config.mjs",
     "./types": {
       "types": "./dist/types.d.mts"
     },
-    "./preset": "./dist/preset.mjs",
+    "./components": "./dist/components.mjs",
+    "./config": "./dist/config.mjs",
     "./create-pwa-context": "./dist/create-pwa-context.mjs",
     "./plugins/node/api": "./dist/plugins/node/api.mjs",
     "./plugins/runtime/sw": "./dist/plugins/runtime/sw.mjs",
+    "./preset": "./dist/preset.mjs",
     "./react-router-sw": {
       "types": "./react-router-sw.d.ts"
     },
