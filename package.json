@@ -24,6 +24,7 @@
   "sideEffects": false,
   "exports": {
     ".": "./dist/index.mjs",
+    "./components": "./dist/components.mjs",
     "./config": "./dist/config.mjs",
     "./types": {
       "types": "./dist/types.d.mts"
@@ -32,7 +33,6 @@
     "./create-pwa-context": "./dist/create-pwa-context.mjs",
     "./plugins/node/api": "./dist/plugins/node/api.mjs",
     "./plugins/runtime/sw": "./dist/plugins/runtime/sw.mjs",
-    "./components":  "./dist/components.mjs",
     "./react-router-sw": {
       "types": "./react-router-sw.d.ts"
     },
@@ -84,8 +84,8 @@
     "@antfu/ni": "catalog:utils",
     "@arethetypeswrong/core": "catalog:utils",
     "@react-router/dev": "catalog:rr8",
-    "@types/react": "catalog:react",
     "@types/node": "catalog:types",
+    "@types/react": "catalog:react",
     "@vite-pwa/assets-generator": "catalog:pwa",
     "@vitejs/devtools": "catalog:utils",
     "eslint": "catalog:eslint",

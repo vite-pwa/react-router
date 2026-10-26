@@ -1,9 +1,25 @@
+# Logs
+logs
+*.log
+pnpm-debug.log*
+
 node_modules
-.DS_Store
 dist
-dev-dist
-# intellij stuff
-.idea/
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # Project exclude paths
-/examples/rr8/build/
+**/build/
+# examples
+**/.react-router/

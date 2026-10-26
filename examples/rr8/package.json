@@ -1,7 +1,7 @@
 {
   "name": "rr8",
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "dev:sw": "BUILD_SW=true react-router dev",
     "dev:generate": "react-router dev",
@@ -13,11 +13,11 @@
   "dependencies": {
     "@react-router/node": "catalog:rr8",
     "@react-router/serve": "catalog:rr8",
-    "vite-pwa-react-router": "workspace:*",
     "isbot": "catalog:rr8",
     "react": "catalog:rr8",
     "react-dom": "catalog:rr8",
-    "react-router": "catalog:rr8"
+    "react-router": "catalog:rr8",
+    "vite-pwa-react-router": "workspace:*"
   },
   "devDependencies": {
     "@react-router/dev": "catalog:rr8",
