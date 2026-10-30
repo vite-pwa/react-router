@@ -9,7 +9,6 @@
     "types": [
       "node",
       "vite/client",
-      "vitest/globals",
       "@unplugin-pwa/core/info",
       "@unplugin-pwa/core/pwa-assets"
     ],

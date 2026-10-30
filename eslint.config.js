@@ -71,4 +71,11 @@ export default antfu(
       '@typescript-eslint/no-unused-vars': 'off',
     },
   },
+  {
+    // it detects nested arrays wrongly
+    files: ['.github/labeler.yml'],
+    rules: {
+      'yaml/indent': 'off',
+    },
+  },
 )
