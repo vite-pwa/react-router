@@ -17,7 +17,7 @@
 </a>
 <br>
 <a href="https://github.com/vite-pwa/react-router" target="__blank">
-<img alt="GitHub stars" src="https://img.shields.io/github/stars/vite-pwa/vitepress?style=social">
+<img alt="GitHub stars" src="https://img.shields.io/github/stars/vite-pwa/react-router?style=social">
 </a>
 </p>
 
