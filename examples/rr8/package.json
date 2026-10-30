@@ -14,11 +14,11 @@
   "dependencies": {
     "@react-router/node": "catalog:rr8",
     "@react-router/serve": "catalog:rr8",
+    "@vite-pwa/react-router": "workspace:*",
     "isbot": "catalog:rr8",
     "react": "catalog:rr8",
     "react-dom": "catalog:rr8",
-    "react-router": "catalog:rr8",
-    "vite-pwa-react-router": "workspace:*"
+    "react-router": "catalog:rr8"
   },
   "devDependencies": {
     "@react-router/dev": "catalog:rr8",

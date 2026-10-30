@@ -63,7 +63,7 @@ pnpm add @vite-pwa/react-router -D
 
 ## 🦄 Usage
 
-You will need to provide your React Router plugin to the `ReactRouterPWAPlugin`:
+You need to provide your React Router plugin to the `ReactRouterPWAPlugin`:
 
 ```ts
 // vite.config.ts
@@ -74,18 +74,18 @@ const reactRouterPlugin = reactRouter()
 
 export default defineConfig({
   plugins: [
-	reactRouterPlugin,
-	ReactRouterPWAPlugin(
-	  reactRouterPlugin,
+    reactRouterPlugin,
+    ReactRouterPWAPlugin(
+      reactRouterPlugin,
       {
         /* PWA options */
       }
-	)
+    )
   ]
 })
 ```
 
-then add the `ReactRouterPWAPreset` to your React Router configuration:
+then, add the `ReactRouterPWAPreset` to your React Router configuration:
 
 ```ts
 // react-router.config.ts
@@ -93,9 +93,9 @@ import type { Config } from '@react-router/dev/config'
 import { ReactRouterPWAPreset } from '@vite-pwa/react-router/preset'
 
 export default {
-	// Config options...
-	// Server-side render by default, to enable SPA mode set this to `false`
-	presets: [ReactRouterPWAPreset()]
+  // Config options...
+  // Server-side render by default, to enable SPA mode set this to `false`
+  presets: [ReactRouterPWAPreset()]
 } satisfies Config
 ```
 
@@ -104,7 +104,7 @@ this plugin.
 
 ## 👀 Full config
 
-Check out the type declaration [src/types.ts](https://github.com/vite-pwa/react-router/blob/master/src/types.ts) and the following links for more details.
+Check out the type declaration [src/types.ts](https://github.com/vite-pwa/react-router/blob/main/src/types.ts) and the following links for more details.
 
 - [Web app manifests](https://developer.mozilla.org/en-US/docs/Web/Manifest)
 - [Vite PWA Workbox](https://unplugin-pwa.netlify.app/vite-pwa-workbox/)

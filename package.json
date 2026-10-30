@@ -1,5 +1,5 @@
 {
-  "name": "vite-pwa-react-router",
+  "name": "@vite-pwa/react-router",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@11.25.0",
