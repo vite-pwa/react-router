@@ -11,7 +11,11 @@ export default defineConfig({
   exclude: [
     'taze',
     'node',
+    'why-is-node-running',
   ],
+  githubActions: {
+    style: 'sha',
+  },
   depFields: {
     packageManager: false,
   },

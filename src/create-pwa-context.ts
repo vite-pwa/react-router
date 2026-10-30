@@ -70,7 +70,7 @@ export function createReactRouterPWAContext<
     createVitePWAContext(true, pwaOptions),
     {
       hmrRequiresSwitcher: true,
-      inspectorRequiresViteDevtools: false,
+      inspectorRequiresViteDevtools: true,
       reactRouter: {
         ssrRuntimeInfo,
         context: undefined!,

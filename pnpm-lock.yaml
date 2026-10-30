@@ -8,8 +8,8 @@ settings:
 catalogs:
   build:
     tsdown:
-      specifier: ^0.23.1
-      version: 0.23.2
+      specifier: ^0.23.4
+      version: 0.23.4
   eslint:
     '@antfu/eslint-config':
       specifier: ^9.5.1
@@ -22,14 +22,14 @@ catalogs:
       version: 3.3.1
   pwa:
     '@unplugin-pwa/core':
-      specifier: ^0.0.2
-      version: 0.0.2
+      specifier: ^0.0.3
+      version: 0.0.3
     '@unplugin-pwa/inspector':
-      specifier: ^0.0.2
-      version: 0.0.2
+      specifier: ^0.0.3
+      version: 0.0.3
     '@unplugin-pwa/vite':
-      specifier: ^0.0.2
-      version: 0.0.2
+      specifier: ^0.0.3
+      version: 0.0.3
     '@vite-pwa/assets-generator':
       specifier: ^2.0.0
       version: 2.0.0
@@ -94,9 +94,6 @@ catalogs:
     '@vitejs/devtools':
       specifier: ^0.7.6
       version: 0.7.6
-    '@vitejs/devtools-kit':
-      specifier: ^0.7.6
-      version: 0.7.6
     https-localhost:
       specifier: 4.7.2
       version: 4.7.2
@@ -118,7 +115,7 @@ overrides:
   chokidar: ^5.0.0
   sharp: ^0.35.5
   semver: ^7.8.5
-  why-is-node-running: 3.2.1
+  why-is-node-running: 3.2.3
 
 importers:
 
@@ -126,13 +123,13 @@ importers:
     dependencies:
       '@unplugin-pwa/core':
         specifier: catalog:pwa
-        version: 0.0.2(@vite-pwa/assets-generator@2.0.0)(magicast@0.5.5)(rolldown@1.2.15)(typescript@6.0.3)(vite@8.3.5)
+        version: 0.0.3(@vite-pwa/assets-generator@2.0.0)(magicast@0.5.5)(rolldown@1.2.15)(typescript@6.0.3)(vite@8.3.5)
       '@unplugin-pwa/inspector':
         specifier: catalog:pwa
-        version: 0.0.2
+        version: 0.0.3
       '@unplugin-pwa/vite':
         specifier: catalog:pwa
-        version: 0.0.2(@vite-pwa/assets-generator@2.0.0)(magicast@0.5.5)(rolldown@1.2.15)(typescript@6.0.3)(vite@8.3.5)
+        version: 0.0.3(@vite-pwa/assets-generator@2.0.0)(magicast@0.5.5)(rolldown@1.2.15)(typescript@6.0.3)(vite@8.3.5)
       '@vite-pwa/workbox-build':
         specifier: catalog:pwa
         version: 8.0.13(magicast@0.5.5)(rolldown@1.2.15)(typescript@6.0.3)(vite@8.3.5)
@@ -193,7 +190,7 @@ importers:
         version: 21.1.0
       tsdown:
         specifier: catalog:build
-        version: 0.23.2(@arethetypeswrong/core@0.18.5)(@vitejs/devtools@0.7.6)(publint@0.3.25)(typescript@6.0.3)
+        version: 0.23.4(@arethetypeswrong/core@0.18.5)(@vitejs/devtools@0.7.6)(publint@0.3.25)(typescript@6.0.3)
       typescript:
         specifier: catalog:typescript
         version: 6.0.3
@@ -243,9 +240,6 @@ importers:
       '@vitejs/devtools':
         specifier: catalog:utils
         version: 0.7.6(@devframes/json-render@1.2.6)(crossws@0.4.16)(srvx@1.0.7)(vite@8.3.5)
-      '@vitejs/devtools-kit':
-        specifier: catalog:utils
-        version: 0.7.6(@devframes/agentic@1.2.6)(cac@7.1.0)(crossws@0.4.16)(srvx@1.0.7)(vite@8.3.5)
       tailwindcss:
         specifier: catalog:rr8
         version: 4.3.3
@@ -1236,8 +1230,8 @@ packages:
     resolution: {integrity: sha512-E2mroviasaWecDzTGiGMtuEguuLVOeRggnrIn93CJuxYJzQBHbyymlT08aVQydbBal5538o+JkBKXh2sRuCyIA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@unplugin-pwa/core@0.0.2':
-    resolution: {integrity: sha512-Uuq2R0k9dAs48MepqIklmfmeewagpy4c7OnEjN5IJQKCYIei6QGPFDKJrmwBf5wM2vyZN6Ljsffenq2iKlQNqg==}
+  '@unplugin-pwa/core@0.0.3':
+    resolution: {integrity: sha512-udhrh9bpBay2SA2c571TVw7OwqHM4UA64brl6tH7YFHvIahNpjghyXDeK6vYjxO1tpNhOmPH+3xWC9+gqccxCw==}
     engines: {node: '>=22.14.0'}
     peerDependencies:
       '@vite-pwa/assets-generator': ^1.0.0 || ^2.0.0
@@ -1251,12 +1245,12 @@ packages:
       vite:
         optional: true
 
-  '@unplugin-pwa/inspector@0.0.2':
-    resolution: {integrity: sha512-vdBlr8JVvkiz3KhRK3rAJWYAqF3vP8PzF6wntgoC4279J7mOZah08S/AVg3IiFTAoR1GASO3JKb8SmoJdxNigQ==}
+  '@unplugin-pwa/inspector@0.0.3':
+    resolution: {integrity: sha512-aVqaXe9corAONKbNxMuQqzIA0ReL9veNU9vGagowRM0XZ4ktiTFpU8Qmb4F2XYWVLykcYM5pxoWvNDcq8rna1A==}
     engines: {node: '>=22.14.0'}
 
-  '@unplugin-pwa/vite@0.0.2':
-    resolution: {integrity: sha512-mZmI5dpbfLDusuqqA/KcPsqntACB7j/mrcbm4Z4MVhcMKTGXJ7/DGw40BB3LwvAFPLoYqGgQA6Reb0Dzn/hSiQ==}
+  '@unplugin-pwa/vite@0.0.3':
+    resolution: {integrity: sha512-ncD2sx2EbRw13QjvVfxPsPDPffaBCpm8Rn8ZHlLtwPh0Yn67hqYaQ3P8ilnHq0gJKW48BH+sE1RAT03+LCqg3g==}
     engines: {node: '>=22.14.0'}
     peerDependencies:
       '@vite-pwa/assets-generator': ^1.0.0 || ^2.0.0
@@ -3093,16 +3087,19 @@ packages:
     resolution: {integrity: sha512-oMA2dcrw6u0YfxJQXm342bFKX/E4sG9rbTzO9ptUcR/e8A33cHuvStiYOwH7fszkZlZ1z/ta9AAoPk2F4qIOHA==}
     engines: {node: '>=18'}
 
-  rolldown-plugin-dts@0.29.0-beta.2:
-    resolution: {integrity: sha512-0NT4q7HMRIpQv47+SfZB5IhEWJh0gp2rDEZPu2ry+LeJFb9tlMB08Sy+sl1+cqcCXnHpkd9dvBy3rZDCBF1JIg==}
+  rolldown-plugin-dts@0.28.8:
+    resolution: {integrity: sha512-FVhfqxorCWcc20BVT5eVRfRjzLLl6mgzjcMR4gSBf0K4oQMXT0qoHhhzfXy0L7y83fQy7Ug5ZDNk90xM3/LiCQ==}
     engines: {node: ^22.18.0 || ^24.11.0 || >=26.0.0}
     peerDependencies:
+      '@typescript/native-preview': '*'
       '@volar/typescript': ~2.4.0
       '@vue/language-core': ~3.2.0 || ~3.3.0
       rolldown: ^1.2.0
-      typescript: ^5.0.0 || ^6.0.0 || ~7.0.0 || ~7.1.0-0
+      typescript: ^5.0.0 || ^6.0.0 || ~7.0.0
       vue-tsc: ~3.2.0 || ~3.3.0
     peerDependenciesMeta:
+      '@typescript/native-preview':
+        optional: true
       '@volar/typescript':
         optional: true
       '@vue/language-core':
@@ -3304,6 +3301,9 @@ packages:
     resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
     engines: {node: '>=12.0.0'}
 
+  tinyps@0.5.1:
+    resolution: {integrity: sha512-B6Ykif5HflC3AdDkS4Zst/2muYVfeXoVMy+KorqH80s/1x4vunIORpNySH681X7fjj+dFM9MDKD6/Hsccjb87Q==}
+
   to-data-view@1.1.0:
     resolution: {integrity: sha512-1eAdufMg6mwgmlojAx3QeMnzB/BTVp7Tbndi3U7ftcT2zCZadjxkkmLmd97zmaxWi+sgGcgWrokmpEoy0Dn0vQ==}
 
@@ -3323,24 +3323,20 @@ packages:
     resolution: {integrity: sha512-sf4i37nQ2LBx4m3wB74y+ubopq6W/dIzXg0FDGjsYnZHVa1Da8FH853wlL2gtUhg+xJXjfk3kUZS3BRoQeoQBQ==}
     engines: {node: '>=6'}
 
-  tree-kill@1.2.2:
-    resolution: {integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==}
-    hasBin: true
-
   ts-api-utils@2.5.0:
     resolution: {integrity: sha512-OJ/ibxhPlqrMM0UiNHJ/0CKQkoKF243/AEmplt3qpRgkW8VG7IfOS41h7V8TjITqdByHzrjcS/2si+y4lIh8NA==}
     engines: {node: '>=18.12'}
     peerDependencies:
       typescript: '>=4.8.4'
 
-  tsdown@0.23.2:
-    resolution: {integrity: sha512-om1OoDykFlv07uM98WAX3ZNmu02FBmHqZYLW1hm+IMktb92r7VMNKgQ/G8dknECI1Q2huPrFJ+sggdYk8efsQg==}
+  tsdown@0.23.4:
+    resolution: {integrity: sha512-AQQ/2Y7KBnf15GL4Ynjdltc94PkbKRI+arStyrp7inSQkRmTWNiXgfv50ESsjhBEsoVtiSloCAO2VyrqojWIOQ==}
     engines: {node: ^22.18.0 || ^24.11.0 || >=26.0.0}
     hasBin: true
     peerDependencies:
       '@arethetypeswrong/core': ^0.18.1
-      '@tsdown/css': 0.23.2
-      '@tsdown/exe': 0.23.2
+      '@tsdown/css': 0.23.4
+      '@tsdown/exe': 0.23.4
       '@vitejs/devtools': '*'
       publint: ^0.3.8
       tsx: '*'
@@ -4520,7 +4516,7 @@ snapshots:
       '@typescript-eslint/types': 8.72.0
       eslint-visitor-keys: 5.0.1
 
-  '@unplugin-pwa/core@0.0.2(@vite-pwa/assets-generator@2.0.0)(magicast@0.5.5)(rolldown@1.2.15)(typescript@6.0.3)(vite@8.3.5)':
+  '@unplugin-pwa/core@0.0.3(@vite-pwa/assets-generator@2.0.0)(magicast@0.5.5)(rolldown@1.2.15)(typescript@6.0.3)(vite@8.3.5)':
     dependencies:
       '@vite-pwa/workbox-build': 8.0.13(magicast@0.5.5)(rolldown@1.2.15)(typescript@6.0.3)(vite@8.3.5)
       hookable: 6.1.2
@@ -4534,13 +4530,13 @@ snapshots:
       - typescript
       - webpack
 
-  '@unplugin-pwa/inspector@0.0.2': {}
+  '@unplugin-pwa/inspector@0.0.3': {}
 
-  '@unplugin-pwa/vite@0.0.2(@vite-pwa/assets-generator@2.0.0)(magicast@0.5.5)(rolldown@1.2.15)(typescript@6.0.3)(vite@8.3.5)':
+  '@unplugin-pwa/vite@0.0.3(@vite-pwa/assets-generator@2.0.0)(magicast@0.5.5)(rolldown@1.2.15)(typescript@6.0.3)(vite@8.3.5)':
     dependencies:
       '@rolldown/pluginutils': 1.0.1
-      '@unplugin-pwa/core': 0.0.2(@vite-pwa/assets-generator@2.0.0)(magicast@0.5.5)(rolldown@1.2.15)(typescript@6.0.3)(vite@8.3.5)
-      '@unplugin-pwa/inspector': 0.0.2
+      '@unplugin-pwa/core': 0.0.3(@vite-pwa/assets-generator@2.0.0)(magicast@0.5.5)(rolldown@1.2.15)(typescript@6.0.3)(vite@8.3.5)
+      '@unplugin-pwa/inspector': 0.0.3
       '@vite-pwa/workbox-build': 8.0.13(magicast@0.5.5)(rolldown@1.2.15)(typescript@6.0.3)(vite@8.3.5)
       '@vite-pwa/workbox-swkit': 8.0.13
       '@vite-pwa/workbox-window': 8.0.13
@@ -6519,7 +6515,7 @@ snapshots:
       onetime: 7.0.0
       signal-exit: 4.1.0
 
-  rolldown-plugin-dts@0.29.0-beta.2(rolldown@1.2.15)(typescript@6.0.3):
+  rolldown-plugin-dts@0.28.8(rolldown@1.2.15)(typescript@6.0.3):
     dependencies:
       dts-resolver: 3.0.0
       get-tsconfig: 5.0.0-beta.6
@@ -6826,6 +6822,8 @@ snapshots:
       fdir: 6.5.0(picomatch@4.0.7)
       picomatch: 4.0.7
 
+  tinyps@0.5.1: {}
+
   to-data-view@1.1.0: {}
 
   to-valid-identifier@1.0.0:
@@ -6841,13 +6839,11 @@ snapshots:
 
   totalist@3.0.1: {}
 
-  tree-kill@1.2.2: {}
-
   ts-api-utils@2.5.0(typescript@6.0.3):
     dependencies:
       typescript: 6.0.3
 
-  tsdown@0.23.2(@arethetypeswrong/core@0.18.5)(@vitejs/devtools@0.7.6)(publint@0.3.25)(typescript@6.0.3):
+  tsdown@0.23.4(@arethetypeswrong/core@0.18.5)(@vitejs/devtools@0.7.6)(publint@0.3.25)(typescript@6.0.3):
     dependencies:
       cac: 7.1.0
       defu: 6.1.7
@@ -6857,10 +6853,10 @@ snapshots:
       obug: 3.0.0
       picomatch: 4.0.7
       rolldown: 1.2.15
-      rolldown-plugin-dts: 0.29.0-beta.2(rolldown@1.2.15)(typescript@6.0.3)
+      rolldown-plugin-dts: 0.28.8(rolldown@1.2.15)(typescript@6.0.3)
       tinyexec: 1.3.1
       tinyglobby: 0.2.17
-      tree-kill: 1.2.2
+      tinyps: 0.5.1
       unconfig-core: 7.5.0
       verkit: 0.5.0
     optionalDependencies:
@@ -6869,6 +6865,7 @@ snapshots:
       publint: 0.3.25
       typescript: 6.0.3
     transitivePeerDependencies:
+      - '@typescript/native-preview'
       - '@volar/typescript'
       - '@vue/language-core'
       - oxc-resolver
