@@ -5,6 +5,9 @@
   "packageManager": "pnpm@11.25.0",
   "description": "Zero-config PWA for React Router",
   "author": "antfu <anthonyfu117@hotmail.com>",
+  "maintainers": [
+    "userquin <userquin@gmail.com>"
+  ],
   "license": "MIT",
   "funding": "https://github.com/sponsors/antfu",
   "homepage": "https://github.com/vite-pwa/react-router#readme",

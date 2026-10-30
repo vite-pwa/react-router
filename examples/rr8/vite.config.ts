@@ -1,10 +1,10 @@
 import process from 'node:process'
 import { reactRouter } from '@react-router/dev/vite'
 import tailwindcss from '@tailwindcss/vite'
+import { ReactRouterPWAPlugin } from '@vite-pwa/react-router'
 import { DevTools } from '@vitejs/devtools'
 import { defineConfig } from 'vite'
 import Inspect from 'vite-plugin-inspect'
-import { ReactRouterPWAPlugin } from 'vite-pwa-react-router'
 
 const reactRouterPlugin = reactRouter()
 
