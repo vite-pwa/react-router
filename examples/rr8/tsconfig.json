@@ -15,9 +15,9 @@
       "node",
       "vite/client",
       "@unplugin-pwa/core/vanillajs",
-      "vite-pwa-react-router/react-router-sw",
-      "vite-pwa-react-router",
-      "vite-pwa-react-router/components"
+      "@vite-pwa/react-router/react-router-sw",
+      "@vite-pwa/react-router",
+      "@vite-pwa/react-router/components"
     ],
     "strict": true,
     "noEmit": true,
