@@ -1,6 +1,6 @@
 import type { Config } from '@react-router/dev/config'
 import process from 'node:process'
-import { ReactRouterPWAPreset } from 'vite-pwa-react-router/preset'
+import { ReactRouterPWAPreset } from '@vite-pwa/react-router/preset'
 
 const spa = process.env.SPA === 'true'
 
