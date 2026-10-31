@@ -5,6 +5,10 @@
     </picture>
 </p>
 
+<h1 align='center'>
+Zero-config PWA for React Router
+</h1>
+
 <p align='center'>
 <a href='https://npmx.dev/package/@vite-pwa/react-router' target="__blank">
 <img src='https://img.shields.io/npm/v/@vite-pwa/react-router?color=33A6B8&label=' alt="NPM version">
