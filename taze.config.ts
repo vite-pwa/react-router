@@ -12,6 +12,10 @@ export default defineConfig({
     'taze',
     'node',
     'why-is-node-running',
+    // unpin rolldown once Vite 8.4 released
+    // we need both, Vite and Rolldown:
+    // using Vite 8.3 with Rolldown 1.3 can cause Vite apps to generated wrong builds
+    'rolldown',
   ],
   githubActions: {
     style: 'sha',
